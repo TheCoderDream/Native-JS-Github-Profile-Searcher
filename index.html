@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <title>Github Profile Searcher</title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-primary mb-3">
+    <div class="container">
+        <a href="#" class="navbar-brand">Github Profile Searcher</a>
+    </div>
+</nav>
+
+<div class="container mb-2">
+    <div class="row">
+        <div class="col-md-12" id="toaster">
+
+        </div>
+    </div>
+</div>
+
+<div class="container searchContainer">
+    <div class="search card">
+        <div class="card-header">
+            <h1>Search Github Users</h1>
+        </div>
+        <div class="card-body">
+            <p class="lead">Enter a username to fetch a user profile</p>
+            <input
+                    type="text"
+                    id="searchUser"
+                    placeholder="Github Username..."
+                    class="form-control"
+            >
+        </div>
+    </div>
+</div>
+
+<div id="profile" class="container mt-3">
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="githubAPIService.js"></script>
+<script src="customToaster.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
